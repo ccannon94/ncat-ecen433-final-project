@@ -56,17 +56,6 @@ F 3 "" H 4700 2300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR?
-U 1 1 58FAC7FC
-P 10550 850
-F 0 "#PWR?" H 10550 700 50  0001 C CNN
-F 1 "+12V" H 10550 990 50  0000 C CNN
-F 2 "" H 10550 850 50  0000 C CNN
-F 3 "" H 10550 850 50  0000 C CNN
-	1    10550 850 
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR?
 U 1 1 58FAC815
 P 10550 5900
@@ -88,4 +77,31 @@ F 3 "" H 2250 1700 50  0000 C CNN
 	1    2250 1700
 	1    0    0    -1  
 $EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 58FACE99
+P 10450 950
+F 0 "#PWR?" H 10450 800 50  0001 C CNN
+F 1 "+3.3V" H 10450 1090 50  0000 C CNN
+F 2 "" H 10450 950 50  0000 C CNN
+F 3 "" H 10450 950 50  0000 C CNN
+	1    10450 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  950  10450 950 
+Wire Wire Line
+	6000 950  6000 2000
+Wire Wire Line
+	1500 2200 950  2200
+Wire Wire Line
+	950  2200 950  950 
+Connection ~ 6000 950 
+Wire Wire Line
+	1600 4350 10550 4350
+Wire Wire Line
+	10550 4350 10550 5900
+Wire Wire Line
+	1600 2200 1600 4350
+Connection ~ 6000 4350
 $EndSCHEMATC
