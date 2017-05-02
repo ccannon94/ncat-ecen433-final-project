@@ -1,4 +1,4 @@
-update=Friday, April 21, 2017 'PMt' 10:59:50 PM
+update=Tuesday, May 02, 2017 'PMt' 03:38:35 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,4 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/Users/CCannon/Documents/kicad_user_libs/embedded-microcontrollers/embedded-microcontrollers
+LibName30=embedded-microcontrollers
