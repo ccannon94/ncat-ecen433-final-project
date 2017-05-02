@@ -34,13 +34,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Title "Seven Segment Display Stopwatch"
+Date "2017-05-01"
+Rev "v0.1"
+Comp "North Carolina Agricultural and Technical State University"
+Comment1 "Department of Computer and Electrical Engineering"
+Comment2 "ECEN 433 Final Project"
+Comment3 "Chris Cannon, Alan Kruger, Joseph Mahaley"
 Comment4 ""
 $EndDescr
 $Comp
@@ -77,7 +77,7 @@ F 3 "" H 10150 5600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 4500 10150 4500
+	3000 4500 10150 4500
 Wire Wire Line
 	10150 4500 10150 5600
 Wire Wire Line
@@ -106,4 +106,118 @@ F 3 "" H 4050 5700 50  0000 C CNN
 	1    4050 5700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4650 5250 6800 5250
+Wire Wire Line
+	6800 5250 6800 4500
+Connection ~ 6800 4500
+Wire Wire Line
+	4650 5350 6900 5350
+Wire Wire Line
+	6900 5350 6900 4500
+Connection ~ 6900 4500
+Wire Wire Line
+	2850 5250 3000 5250
+Wire Wire Line
+	3000 4500 3000 5350
+Wire Wire Line
+	3000 5350 2850 5350
+Connection ~ 5500 4500
+Connection ~ 3000 5250
+Wire Wire Line
+	3450 5300 3450 2750
+Wire Wire Line
+	3450 2750 3900 2750
+Wire Wire Line
+	3450 5400 3400 5400
+Wire Wire Line
+	3400 5400 3400 2850
+Wire Wire Line
+	3400 2850 3900 2850
+Wire Wire Line
+	3450 5500 3350 5500
+Wire Wire Line
+	3350 5500 3350 2950
+Wire Wire Line
+	3350 2950 3900 2950
+Wire Wire Line
+	3450 5600 3300 5600
+Wire Wire Line
+	3300 5600 3300 3050
+Wire Wire Line
+	3300 3050 3900 3050
+Wire Wire Line
+	3450 5700 3250 5700
+Wire Wire Line
+	3250 5700 3250 3150
+Wire Wire Line
+	3250 3150 3900 3150
+Wire Wire Line
+	3450 5800 3200 5800
+Wire Wire Line
+	3200 5800 3200 3250
+Wire Wire Line
+	3200 3250 3900 3250
+Wire Wire Line
+	3450 5900 3150 5900
+Wire Wire Line
+	3150 5900 3150 3350
+Wire Wire Line
+	3150 3350 3900 3350
+Wire Wire Line
+	1650 5300 1500 5300
+Wire Wire Line
+	1500 5300 1500 5150
+Wire Wire Line
+	1650 5400 1400 5400
+Wire Wire Line
+	1400 5400 1400 5150
+Wire Wire Line
+	1650 5500 1300 5500
+Wire Wire Line
+	1300 5500 1300 5150
+Wire Wire Line
+	1650 5600 1200 5600
+Wire Wire Line
+	1200 5600 1200 5150
+Wire Wire Line
+	1650 5700 1100 5700
+Wire Wire Line
+	1100 5700 1100 5150
+Wire Wire Line
+	1650 5800 1000 5800
+Wire Wire Line
+	1000 5800 1000 5150
+Wire Wire Line
+	1650 5900 900  5900
+Wire Wire Line
+	900  5900 900  5150
+Text GLabel 1500 5150 1    60   Input ~ 0
+2.0
+Text GLabel 1400 5150 1    60   Input ~ 0
+2.1
+Text GLabel 1300 5150 1    60   Input ~ 0
+2.2
+Text GLabel 1200 5150 1    60   Input ~ 0
+2.3
+Text GLabel 1100 5150 1    60   Input ~ 0
+2.4
+Text GLabel 1000 5150 1    60   Input ~ 0
+2.5
+Text GLabel 900  5150 1    60   Input ~ 0
+2.6
+Text GLabel 7000 3600 2    60   Input ~ 0
+2.0
+Text GLabel 7000 3800 2    60   Input ~ 0
+2.2
+Text GLabel 7000 3900 2    60   Input ~ 0
+2.3
+Text GLabel 7000 4000 2    60   Input ~ 0
+2.4
+Text GLabel 7000 4100 2    60   Input ~ 0
+2.5
+Text GLabel 3900 3950 0    60   Input ~ 0
+2.6
+Text GLabel 7000 3700 2    60   Input ~ 0
+2.1
 $EndSCHEMATC
