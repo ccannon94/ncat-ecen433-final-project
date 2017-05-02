@@ -61,4 +61,37 @@ void displayCurrentSeconds()
             break;
         default: break;
     }
+    switch(msd)
+    {
+        case 0:
+            P2OUT = 0x3F;
+            break;
+        case 1:
+            P2OUT = 0x06;
+            break;
+        case 2:
+            P2OUT = 0x5B;
+            break;
+        case 3:
+            P2OUT = 0x4F;
+            break;
+        case 4:
+            P2OUT = 0x66;
+            break;
+        case 5:
+            P2OUT = 0x6D;
+            break;
+        case 6:
+            P2OUT = 0x7D;
+            break;
+        case 7:
+            P2OUT = 0x07;
+            break;
+        case 8:
+            P2OUT = 0x7F;
+            break;
+        case 9:
+            P2OUT = 0x6F;
+            break;
+    }
 }
