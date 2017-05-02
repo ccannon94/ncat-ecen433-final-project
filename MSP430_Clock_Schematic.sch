@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:embedded-microcontrollers
+LIBS:MSP430_Clock_Schematic-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -81,7 +82,7 @@ Wire Wire Line
 Wire Wire Line
 	10150 4500 10150 5600
 Wire Wire Line
-	10150 750  5500 750 
+	2050 750  10150 750 
 Wire Wire Line
 	5500 750  5500 2150
 $Comp
@@ -143,27 +144,19 @@ Wire Wire Line
 Wire Wire Line
 	3450 5600 3300 5600
 Wire Wire Line
-	3300 5600 3300 3050
-Wire Wire Line
-	3300 3050 3900 3050
+	3300 5700 3300 3150
 Wire Wire Line
 	3450 5700 3250 5700
 Wire Wire Line
-	3250 5700 3250 3150
-Wire Wire Line
-	3250 3150 3900 3150
+	3250 3250 3250 5850
 Wire Wire Line
 	3450 5800 3200 5800
 Wire Wire Line
-	3200 5800 3200 3250
-Wire Wire Line
-	3200 3250 3900 3250
+	3200 3350 3200 6000
 Wire Wire Line
 	3450 5900 3150 5900
 Wire Wire Line
-	3150 5900 3150 3350
-Wire Wire Line
-	3150 3350 3900 3350
+	3150 3450 3150 6050
 Wire Wire Line
 	1650 5300 1500 5300
 Wire Wire Line
@@ -220,4 +213,30 @@ Text GLabel 3900 3950 0    60   Input ~ 0
 2.6
 Text GLabel 7000 3700 2    60   Input ~ 0
 2.1
+Wire Wire Line
+	3300 3150 3900 3150
+Wire Wire Line
+	3900 3250 3250 3250
+Wire Wire Line
+	3900 3350 3200 3350
+Wire Wire Line
+	3900 3450 3150 3450
+$Comp
+L SW_PUSH_SMALL SW?
+U 1 1 5908E69E
+P 2150 2550
+F 0 "SW?" H 2300 2660 50  0000 C CNN
+F 1 "SW_PUSH_SMALL" H 2150 2471 50  0000 C CNN
+F 2 "" H 2150 2550 50  0000 C CNN
+F 3 "" H 2150 2550 50  0000 C CNN
+	1    2150 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3050 2250 3050
+Wire Wire Line
+	2250 3050 2250 2650
+Wire Wire Line
+	2050 2450 2050 750 
+Connection ~ 5500 750 
 $EndSCHEMATC

@@ -16,9 +16,15 @@ void main(void)
 
     while(1)
     {
+        
         displayCurrentSeconds();
         currentSeconds++;
         __delay_cycles(1000);
+        
+        if(currentSeconds >= 99)
+        {
+            currentSeconds = 0;
+        }
     }
 }
 
