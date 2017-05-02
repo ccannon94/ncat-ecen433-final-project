@@ -9,13 +9,17 @@ void main(void)
 {
     WDTCTL = WDTPW | WDTHOLD;	// Stop watchdog timer
 	
-    P1DIR = 0xFF;
+    P1DIR = 0xF7;
     P2DIR = 0xFF;
 
     currentSeconds = 0;
 
     while(1)
     {
+        if(P1IN & 0x08 == 0)
+        {
+            currentSeconds = 0;
+        }
         
         displayCurrentSeconds();
         currentSeconds++;
